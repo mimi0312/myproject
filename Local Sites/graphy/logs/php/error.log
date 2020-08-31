@@ -1,0 +1,37 @@
+[17-Aug-2020 08:09:32 UTC] PHP Warning:  Error while sending QUERY packet. PID=3172 in C:\Users\framb\Local Sites\graphy\app\public\wp-includes\wp-db.php on line 2024
+[17-Aug-2020 08:09:32 UTC] PHP Stack trace:
+[17-Aug-2020 08:09:32 UTC] PHP   1. {main}() C:\Users\framb\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[17-Aug-2020 08:09:32 UTC] PHP   2. include() C:\Users\framb\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[17-Aug-2020 08:09:32 UTC] PHP   3. include() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[17-Aug-2020 08:09:32 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[17-Aug-2020 08:09:32 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[17-Aug-2020 08:09:33 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[17-Aug-2020 08:09:33 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[17-Aug-2020 08:09:33 UTC] PHP   8. WP_CLI\Runner->run_command() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[17-Aug-2020 08:09:33 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[17-Aug-2020 08:09:33 UTC] PHP  10. call_user_func:{phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[17-Aug-2020 08:09:33 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[17-Aug-2020 08:09:33 UTC] PHP  12. call_user_func:{phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[17-Aug-2020 08:09:33 UTC] PHP  13. Core_Command->check_update() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[17-Aug-2020 08:09:33 UTC] PHP  14. Core_Command->get_updates() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:77
+[17-Aug-2020 08:09:33 UTC] PHP  15. wp_version_check() phar://C:/Users/framb/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:1297
+[17-Aug-2020 08:09:33 UTC] PHP  16. set_site_transient() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\update.php:225
+[17-Aug-2020 08:09:33 UTC] PHP  17. update_site_option() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\option.php:1864
+[17-Aug-2020 08:09:33 UTC] PHP  18. update_network_option() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\option.php:1203
+[17-Aug-2020 08:09:33 UTC] PHP  19. update_option() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\option.php:1629
+[17-Aug-2020 08:09:33 UTC] PHP  20. wpdb->update() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\option.php:390
+[17-Aug-2020 08:09:33 UTC] PHP  21. wpdb->query() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\wp-db.php:2314
+[17-Aug-2020 08:09:33 UTC] PHP  22. wpdb->_do_query() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\wp-db.php:1912
+[17-Aug-2020 08:09:33 UTC] PHP  23. mysqli_query() C:\Users\framb\Local Sites\graphy\app\public\wp-includes\wp-db.php:2024
+[17-Aug-2020 08:35:34 UTC] PHP Parse error:  syntax error, unexpected 'do_shortcode' (T_STRING) in C:\Users\framb\Local Sites\graphy\app\public\wp-content\themes\graphy\header.php on line 56
+[24-Aug-2020 05:50:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_script() in C:\Users\framb\Local Sites\graphy\app\public\wp-content\themes\graphy-child\footer.php:37
+Stack trace:
+#0 C:\Users\framb\Local Sites\graphy\app\public\wp-includes\template.php(723): require_once()
+#1 C:\Users\framb\Local Sites\graphy\app\public\wp-includes\template.php(672): load_template('C:\\Users\\framb\\...', true)
+#2 C:\Users\framb\Local Sites\graphy\app\public\wp-includes\general-template.php(76): locate_template(Array, true)
+#3 C:\Users\framb\Local Sites\graphy\app\public\wp-content\themes\graphy\home.php(39): get_footer()
+#4 C:\Users\framb\Local Sites\graphy\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\framb\\...')
+#5 C:\Users\framb\Local Sites\graphy\app\public\wp-blog-header.php(19): require_once('C:\\Users\\framb\\...')
+#6 C:\Users\framb\Local Sites\graphy\app\public\index.php(17): require('C:\\Users\\framb\\...')
+#7 {main}
+  thrown in C:\Users\framb\Local Sites\graphy\app\public\wp-content\themes\graphy-child\footer.php on line 37
